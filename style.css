@@ -1,0 +1,44 @@
+/* Customizações adicionais ao Bootstrap 5 */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Transições suaves nos cards e botões */
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.table tbody tr {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.04);
+}
+
+/* Tamanho de fonte auxiliar */
+.fs-7 {
+  font-size: 0.85rem;
+}
+
+/* Estilo do Header do Formulário para modo Edição */
+.card-header.bg-warning {
+  transition: background-color 0.3s ease;
+}
+
+/* Animação para mensagens de alerta */
+#alertContainer .alert {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
